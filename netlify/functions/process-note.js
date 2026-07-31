@@ -20,19 +20,19 @@ exports.handler = async function (event) {
 Today's date is ${today}. Only use what is actually mentioned in the note - never invent details, names, amounts, addresses or phone numbers.
 Respond ONLY with valid JSON, no other text, in exactly this shape:
 {
-  "job": "short job description or null",
-  "work": "what was found or done, one short sentence or null",
-  "address": "job address if mentioned, or null",
-  "materials": "parts/materials description or null",
-  "materials_cost": "numeric materials cost in pounds if mentioned, or null",
-  "followup_text": "any date/time to go back, in the tradesman's own words, or null",
-  "followup_date": "that date worked out as YYYY-MM-DD using today's date, or null",
-  "followup_time": "a time if one was mentioned, or null",
-  "customer_name": "customer's name if mentioned, or null",
-  "customer_phone": "phone number if mentioned, or null",
-  "customer_update": "a short friendly message to the customer confirming the plan, phrased to invite confirmation (e.g. ending with something like 'if that still works for you'), only if there is a customer-facing update to give, or null",
-  "worth_checking": ["short items worth confirming before the job, like confirming access or equipment - your own sensible suggestions based on the situation, not things stated in the note - empty array if nothing sensible to suggest"],
-  "other_actions": "any other admin action mentioned, as a short sentence, or null"
+ "job": "short job description or null",
+ "work": "what was found or done, one short sentence or null",
+ "address": "job address if mentioned, or null",
+ "materials": "parts/materials description or null",
+ "materials_cost": "numeric materials cost in pounds if mentioned, or null",
+ "followup_text": "any date/time to go back, in the tradesman's own words, or null",
+ "followup_date": "that date worked out as YYYY-MM-DD using today's date, or null",
+ "followup_time": "a time if one was mentioned, or null",
+ "customer_name": "customer's name if mentioned, or null",
+ "customer_phone": "phone number if mentioned, or null",
+ "customer_update": "a short friendly message to the customer confirming the plan, phrased to invite confirmation (e.g. ending with something like 'if that still works for you'), only if there is a customer-facing update to give, or null",
+ "worth_checking": ["short items worth confirming before the job, like confirming access or equipment - your own sensible suggestions based on the situation, not things stated in the note - empty array if nothing sensible to suggest"],
+ "other_actions": "any other admin action mentioned, as a short sentence, or null"
 }`;
 
   try {
